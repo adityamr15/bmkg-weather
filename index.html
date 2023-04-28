@@ -68,6 +68,23 @@
 					<h1>bmkg-weather</h1>
 				</a>
 				<p>NodeJS BMKG Weather Service</p>
+				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
+					<h3>Install</h3>
+				</a>
+				<pre><code>npm <span class="hljs-keyword">install</span> bmkg-weather
+</code></pre>
+				<p>or</p>
+				<pre><code>yarn <span class="hljs-builtin-name">add</span> bmkg-weather
+</code></pre>
+				<a href="#implementation" id="implementation" style="color: inherit; text-decoration: none;">
+					<h3>Implementation</h3>
+				</a>
+				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> BMKGWeather <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;bmkg-weather&#x27;</span>;
+
+<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> BMKGWeather.getAll();
+
+<span class="hljs-built_in">console</span>.log(result);
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
