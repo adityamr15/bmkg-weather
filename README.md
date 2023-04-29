@@ -22,4 +22,7 @@ import BMKGWeather from 'bmkg-weather';
 const result = await BMKGWeather.getAll();
 
 console.log(result);
+
+const searchResult = await BMKGWeather.getAll({ query: 'sumbawa' });
+console.log(searchResult);
 ```
