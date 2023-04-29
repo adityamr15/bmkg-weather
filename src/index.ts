@@ -2,11 +2,11 @@ import axios from 'axios';
 import { xml2js } from 'xml-js';
 
 import { BASE_BMKG_WEATHER_URL, XML_DATA } from './config';
-import { IAreaParameter, IWeather } from './types';
+import { AreaParameter, SearchParam, Weather } from './types';
 
 class BMKGWeather {
   private nextSyncDateTime = 0;
-  private jsonData: IWeather[] = [];
+  private jsonData: Weather[] = [];
 
   private get shouldSync(): boolean {
     return Date.now() > this.nextSyncDateTime;
@@ -35,8 +35,16 @@ class BMKGWeather {
   //   return data;
   // }
 
-  async getAll() {
-    return await this.sync();
+  async getAll(search: SearchParam = { query: '' }) {
+    const data = await this.sync();
+
+    if (typeof search.query === 'string' && search.query.length) {
+      return data.filter((weather) =>
+        weather.name.toLowerCase().includes(search.query?.toLowerCase())
+      );
+    }
+
+    return data;
   }
 
   private async request() {
@@ -63,7 +71,7 @@ class BMKGWeather {
     this.nextSyncDateTime = now.getTime();
   }
 
-  private parseWeather(jsonData: any): IWeather[] {
+  private parseWeather(jsonData: any): Weather[] {
     const area = jsonData.data.forecast.area;
     return area.map((data: any) => {
       return {
@@ -79,7 +87,7 @@ class BMKGWeather {
 
   private parseTemperatureParam(
     jsonDataAreaParameters: any[]
-  ): IAreaParameter[] {
+  ): AreaParameter[] {
     try {
       const weatherAndTemperatureParam = jsonDataAreaParameters.find(
         (data) => data._attributes.id === 't'
