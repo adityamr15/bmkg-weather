@@ -1,4 +1,7 @@
 # bmkg-weather
+![npm](https://img.shields.io/npm/v/bmkg-weather?style=flat-square&logo=npm)
+![npm](https://img.shields.io/npm/dt/bmkg-weather?color=4caf50&logo=react-native-wheel-picker-expo&style=flat-square)
+![npm type definitions](https://img.shields.io/npm/types/bmkg-weather?style=flat-square)
 
 NodeJS BMKG Weather Service
 
