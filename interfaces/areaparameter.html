@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>bmkg-weather</title>
+	<title>AreaParameter | bmkg-weather</title>
 	<meta name="description" content="Documentation for bmkg-weather">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">bmkg-weather</a>
+					<a href="../index.html" class="title">bmkg-weather</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -53,67 +53,104 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="areaparameter.html">AreaParameter</a>
 				</li>
 			</ul>
-			<h1>bmkg-weather</h1>
+			<h1>Interface AreaParameter</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<a href="#bmkg-weather" id="bmkg-weather" style="color: inherit; text-decoration: none;">
-					<h1>bmkg-weather</h1>
-				</a>
-				<p>NodeJS BMKG Weather Service</p>
-				<a href="#install" id="install" style="color: inherit; text-decoration: none;">
-					<h3>Install</h3>
-				</a>
-				<pre><code>npm <span class="hljs-keyword">install</span> bmkg-weather
-</code></pre>
-				<p>or</p>
-				<pre><code>yarn <span class="hljs-builtin-name">add</span> bmkg-weather
-</code></pre>
-				<a href="#implementation" id="implementation" style="color: inherit; text-decoration: none;">
-					<h3>Implementation</h3>
-				</a>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> BMKGWeather <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;bmkg-weather&#x27;</span>;
-
-<span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> BMKGWeather.getAll();
-
-<span class="hljs-built_in">console</span>.log(result);
-</code></pre>
-			</div>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">AreaParameter</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="areaparameter.html#datetime" class="tsd-kind-icon">date<wbr>Time</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="areaparameter.html#value" class="tsd-kind-icon">value</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="datetime" class="tsd-anchor"></a>
+					<h3>date<wbr>Time</h3>
+					<div class="tsd-signature tsd-kind-icon">date<wbr>Time<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/adityamr15/bmkg-weather/blob/ccdf727/src/types/index.ts#L3">types/index.ts:3</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="value" class="tsd-anchor"></a>
+					<h3>value</h3>
+					<div class="tsd-signature tsd-kind-icon">value<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/adityamr15/bmkg-weather/blob/ccdf727/src/types/index.ts#L2">types/index.ts:2</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
-						<a href="classes/bmkgweather.html" class="tsd-kind-icon">BMKGWeather</a>
+						<a href="../classes/bmkgweather.html" class="tsd-kind-icon">BMKGWeather</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="areaparameter.html" class="tsd-kind-icon">Area<wbr>Parameter</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="areaparameter.html#datetime" class="tsd-kind-icon">date<wbr>Time</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="areaparameter.html#value" class="tsd-kind-icon">value</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="searchparam.html" class="tsd-kind-icon">Search<wbr>Param</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/areaparameter.html" class="tsd-kind-icon">Area<wbr>Parameter</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/searchparam.html" class="tsd-kind-icon">Search<wbr>Param</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/weather.html" class="tsd-kind-icon">Weather</a>
+						<a href="weather.html" class="tsd-kind-icon">Weather</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#base_bmkg_weather_url" class="tsd-kind-icon">BASE_<wbr>BMKG_<wbr>WEATHER_<wbr>URL</a>
+						<a href="../globals.html#base_bmkg_weather_url" class="tsd-kind-icon">BASE_<wbr>BMKG_<wbr>WEATHER_<wbr>URL</a>
 					</li>
 					<li class=" tsd-kind-variable">
-						<a href="globals.html#xml_data" class="tsd-kind-icon">XML_<wbr>DATA</a>
+						<a href="../globals.html#xml_data" class="tsd-kind-icon">XML_<wbr>DATA</a>
 					</li>
 				</ul>
 			</nav>
@@ -141,6 +178,6 @@
 	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
